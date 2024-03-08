@@ -1,0 +1,1804 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Select a Category")
+gui.Form1..size(3000,1890)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,form1_unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(8)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(False)
+gui.Form1..minbutton(False)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(True)
+gui.Form1..ShowInTaskBar(True)
+gui.Form1..titlebar(True)
+gui.Form1.dropdownlist1.create(dropdownlist)
+gui.Form1.dropdownlist1.visible(True)
+gui.Form1.dropdownlist1.size(1845,330)
+gui.Form1.dropdownlist1.zorder(0)
+gui.Form1.dropdownlist1.position(200,200)
+gui.Form1.dropdownlist1.enabled(True)
+gui.Form1.dropdownlist1.fontname("Arial")
+gui.Form1.dropdownlist1.fontsize(8)
+gui.Form1.dropdownlist1.defaultvalue("")
+gui.Form1.dropdownlist1.controlgroup(0)
+gui.Form1.cmdContinue.create(button)
+gui.Form1.cmdContinue.caption("Continue")
+gui.Form1.cmdContinue.visible(True)
+gui.Form1.cmdContinue.size(855,375)
+gui.Form1.cmdContinue.zorder(0)
+gui.Form1.cmdContinue.position(200,800)
+gui.Form1.cmdContinue.enabled(True)
+gui.Form1.cmdContinue.fontname("Arial")
+gui.Form1.cmdContinue.fontsize(8)
+gui.Form1.cmdContinue.event(click,cmdcontinue_click)
+gui.Form1.cmdContinue.defaultvalue("")
+gui.Form1.cmdContinue.controlgroup(0)
+gui.Form1.dropdownlist1.tabstop(True)
+gui.Form1.dropdownlist1.tabindex(1)
+gui.Form1.cmdContinue.tabstop(True)
+gui.Form1.cmdContinue.tabindex(2)
+
+
+gui.FWorkOrder..create
+gui.FWorkOrder..caption("Work Order")
+gui.FWorkOrder..size(3000,2310)
+gui.FWorkOrder..minx(0)
+gui.FWorkOrder..miny(0)
+gui.FWorkOrder..position(0,0)
+gui.FWorkOrder..event(unload,fworkorder_unload)
+gui.FWorkOrder..alwaysontop(False)
+gui.FWorkOrder..fontname("Arial")
+gui.FWorkOrder..fontsize(8)
+gui.FWorkOrder..forecolor(0)
+gui.FWorkOrder..fontstyle(,,,,)
+gui.FWorkOrder..BackColor(-2147483633)
+gui.FWorkOrder..controlbox(True)
+gui.FWorkOrder..maxbutton(False)
+gui.FWorkOrder..minbutton(False)
+gui.FWorkOrder..mousepointer(0)
+gui.FWorkOrder..moveable(True)
+gui.FWorkOrder..sizeable(True)
+gui.FWorkOrder..ShowInTaskBar(True)
+gui.FWorkOrder..titlebar(True)
+gui.FWorkOrder.txtWO.create(textbox,"",True,1215,300,0,200,460,True,0,Arial,8,-2147483643,1)
+gui.FWorkOrder.txtWO.event(lostfocus,txtwo_lostfocus)
+gui.FWorkOrder.txtWO.defaultvalue("")
+gui.FWorkOrder.txtWO.controlgroup(0)
+gui.FWorkOrder.cmdWOBrowser.create(button)
+gui.FWorkOrder.cmdWOBrowser.caption("^")
+gui.FWorkOrder.cmdWOBrowser.visible(True)
+gui.FWorkOrder.cmdWOBrowser.size(400,300)
+gui.FWorkOrder.cmdWOBrowser.zorder(0)
+gui.FWorkOrder.cmdWOBrowser.position(1555,460)
+gui.FWorkOrder.cmdWOBrowser.enabled(True)
+gui.FWorkOrder.cmdWOBrowser.fontname("Arial")
+gui.FWorkOrder.cmdWOBrowser.fontsize(8)
+gui.FWorkOrder.cmdWOBrowser.event(click,cmdwobrowser_click)
+gui.FWorkOrder.cmdWOBrowser.defaultvalue("")
+gui.FWorkOrder.cmdWOBrowser.controlgroup(0)
+gui.FWorkOrder.lblWorkOrder.create(label,"Work Order",True,960,255,1,200,200,True,0,Arial,8,-2147483633,0)
+gui.FWorkOrder.lblWorkOrder.defaultvalue("")
+gui.FWorkOrder.lblWorkOrder.controlgroup(0)
+gui.FWorkOrder.cmdWOExecute.create(button)
+gui.FWorkOrder.cmdWOExecute.caption("Execute")
+gui.FWorkOrder.cmdWOExecute.visible(True)
+gui.FWorkOrder.cmdWOExecute.size(855,375)
+gui.FWorkOrder.cmdWOExecute.zorder(0)
+gui.FWorkOrder.cmdWOExecute.position(200,1175)
+gui.FWorkOrder.cmdWOExecute.enabled(False)
+gui.FWorkOrder.cmdWOExecute.fontname("Arial")
+gui.FWorkOrder.cmdWOExecute.fontsize(8)
+gui.FWorkOrder.cmdWOExecute.event(click,cmdwoexecute_click)
+gui.FWorkOrder.cmdWOExecute.defaultvalue("")
+gui.FWorkOrder.cmdWOExecute.controlgroup(0)
+gui.FWorkOrder.txtWO.tabstop(True)
+gui.FWorkOrder.txtWO.tabindex(1)
+gui.FWorkOrder.cmdWOBrowser.tabstop(True)
+gui.FWorkOrder.cmdWOBrowser.tabindex(2)
+gui.FWorkOrder.cmdWOExecute.tabstop(True)
+gui.FWorkOrder.cmdWOExecute.tabindex(3)
+
+
+gui.FPO..create
+gui.FPO..caption("Purchase Order")
+gui.FPO..size(3075,2325)
+gui.FPO..minx(0)
+gui.FPO..miny(0)
+gui.FPO..position(0,0)
+gui.FPO..event(unload,fpo_unload)
+gui.FPO..alwaysontop(False)
+gui.FPO..fontname("Arial")
+gui.FPO..fontsize(8)
+gui.FPO..forecolor(0)
+gui.FPO..fontstyle(,,,,)
+gui.FPO..BackColor(-2147483633)
+gui.FPO..controlbox(True)
+gui.FPO..maxbutton(False)
+gui.FPO..minbutton(False)
+gui.FPO..mousepointer(0)
+gui.FPO..moveable(True)
+gui.FPO..sizeable(True)
+gui.FPO..ShowInTaskBar(True)
+gui.FPO..titlebar(True)
+gui.FPO.lblPO.create(label,"Purchase Order",True,1335,255,1,200,200,True,0,Arial,8,-2147483633,0)
+gui.FPO.lblPO.defaultvalue("")
+gui.FPO.lblPO.controlgroup(0)
+gui.FPO.txtPO.create(textbox,"",True,1215,300,0,200,460,True,0,Arial,8,-2147483643,1)
+gui.FPO.txtPO.event(lostfocus,txtpo_lostfocus)
+gui.FPO.txtPO.defaultvalue("")
+gui.FPO.txtPO.controlgroup(0)
+gui.FPO.cmdPOBrowse.create(button)
+gui.FPO.cmdPOBrowse.caption("^")
+gui.FPO.cmdPOBrowse.visible(True)
+gui.FPO.cmdPOBrowse.size(400,300)
+gui.FPO.cmdPOBrowse.zorder(0)
+gui.FPO.cmdPOBrowse.position(1555,460)
+gui.FPO.cmdPOBrowse.enabled(True)
+gui.FPO.cmdPOBrowse.fontname("Arial")
+gui.FPO.cmdPOBrowse.fontsize(8)
+gui.FPO.cmdPOBrowse.event(click,cmdpobrowse_click)
+gui.FPO.cmdPOBrowse.defaultvalue("")
+gui.FPO.cmdPOBrowse.controlgroup(0)
+gui.FPO.cmdPOExecute.create(button)
+gui.FPO.cmdPOExecute.caption("Execute")
+gui.FPO.cmdPOExecute.visible(True)
+gui.FPO.cmdPOExecute.size(855,375)
+gui.FPO.cmdPOExecute.zorder(0)
+gui.FPO.cmdPOExecute.position(200,1175)
+gui.FPO.cmdPOExecute.enabled(False)
+gui.FPO.cmdPOExecute.fontname("Arial")
+gui.FPO.cmdPOExecute.fontsize(8)
+gui.FPO.cmdPOExecute.event(click,cmdpoexecute_click)
+gui.FPO.cmdPOExecute.defaultvalue("")
+gui.FPO.cmdPOExecute.controlgroup(0)
+gui.FPO.txtPO.tabstop(True)
+gui.FPO.txtPO.tabindex(1)
+gui.FPO.cmdPOBrowse.tabstop(True)
+gui.FPO.cmdPOBrowse.tabindex(2)
+gui.FPO.cmdPOExecute.tabstop(True)
+gui.FPO.cmdPOExecute.tabindex(3)
+
+
+gui.fOEM..create
+gui.fOEM..caption("OEM Maint.")
+gui.fOEM..size(3000,3060)
+gui.fOEM..minx(0)
+gui.fOEM..miny(0)
+gui.fOEM..position(0,0)
+gui.fOEM..event(unload,foem_unload)
+gui.fOEM..alwaysontop(False)
+gui.fOEM..fontname("Arial")
+gui.fOEM..fontsize(8)
+gui.fOEM..forecolor(0)
+gui.fOEM..fontstyle(,,,,)
+gui.fOEM..BackColor(-2147483633)
+gui.fOEM..controlbox(True)
+gui.fOEM..maxbutton(False)
+gui.fOEM..minbutton(False)
+gui.fOEM..mousepointer(0)
+gui.fOEM..moveable(True)
+gui.fOEM..sizeable(True)
+gui.fOEM..ShowInTaskBar(True)
+gui.fOEM..titlebar(True)
+gui.fOEM.lblCust.create(label,"Customer",True,840,255,1,200,200,True,0,Arial,8,-2147483633,0)
+gui.fOEM.lblCust.defaultvalue("")
+gui.fOEM.lblCust.controlgroup(0)
+gui.fOEM.txtCustomer.create(textbox,"",True,1215,300,0,200,460,True,0,Arial,8,-2147483643,1)
+gui.fOEM.txtCustomer.event(lostfocus,txtcustomer_lostfocus)
+gui.fOEM.txtCustomer.defaultvalue("")
+gui.fOEM.txtCustomer.controlgroup(0)
+gui.fOEM.cmdCustBrowse.create(button)
+gui.fOEM.cmdCustBrowse.caption("^")
+gui.fOEM.cmdCustBrowse.visible(True)
+gui.fOEM.cmdCustBrowse.size(400,300)
+gui.fOEM.cmdCustBrowse.zorder(0)
+gui.fOEM.cmdCustBrowse.position(1555,460)
+gui.fOEM.cmdCustBrowse.enabled(True)
+gui.fOEM.cmdCustBrowse.fontname("Arial")
+gui.fOEM.cmdCustBrowse.fontsize(8)
+gui.fOEM.cmdCustBrowse.event(click,cmdcustbrowse_click)
+gui.fOEM.cmdCustBrowse.defaultvalue("")
+gui.fOEM.cmdCustBrowse.controlgroup(0)
+gui.fOEM.lblNewStartingSerial.create(label,"New Starting Serial Number",True,2250,255,1,200,1035,True,0,Arial,8,-2147483633,0)
+gui.fOEM.lblNewStartingSerial.defaultvalue("")
+gui.fOEM.lblNewStartingSerial.controlgroup(0)
+gui.fOEM.txtSerialNum.create(textbox,"",True,1215,300,0,200,1330,True,0,Arial,8,-2147483643,1)
+gui.fOEM.txtSerialNum.event(lostfocus,txtserialnum_lostfocus)
+gui.fOEM.txtSerialNum.defaultvalue("")
+gui.fOEM.txtSerialNum.controlgroup(0)
+gui.fOEM.cmdSave.create(button)
+gui.fOEM.cmdSave.caption("Save")
+gui.fOEM.cmdSave.visible(True)
+gui.fOEM.cmdSave.size(855,375)
+gui.fOEM.cmdSave.zorder(0)
+gui.fOEM.cmdSave.position(200,1900)
+gui.fOEM.cmdSave.enabled(True)
+gui.fOEM.cmdSave.fontname("Arial")
+gui.fOEM.cmdSave.fontsize(8)
+gui.fOEM.cmdSave.event(click,cmdsave_click)
+gui.fOEM.cmdSave.defaultvalue("")
+gui.fOEM.cmdSave.controlgroup(0)
+gui.fOEM.txtCustomer.tabstop(True)
+gui.fOEM.txtCustomer.tabindex(1)
+gui.fOEM.cmdCustBrowse.tabstop(True)
+gui.fOEM.cmdCustBrowse.tabindex(2)
+gui.fOEM.txtSerialNum.tabstop(True)
+gui.fOEM.txtSerialNum.tabindex(3)
+gui.fOEM.cmdSave.tabstop(True)
+gui.fOEM.cmdSave.tabindex(4)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.bOEM.Declare(Boolean,False)
+Variable.Global.sCustomer.Declare(String)
+Variable.Global.fQty.Declare(Float,0)
+Variable.Global.sPart.Declare(String)
+Variable.Global.sOrderNo.Declare(String)
+Variable.UDT.uPO.Define("PURCHASE_ORDER",String,PURCHASE_ORDER)
+Variable.UDT.uPO.Define("RECORD_NO",String,RECORD_NO)
+Variable.UDT.uPO.Define("PART",String,PART)
+Variable.UDT.uPO.Define("LOCATION",String,LOCATION)
+Variable.UDT.uPO.Define("QTY_ORDER",String,QTY_ORDER)
+Variable.UDT.uPO.Define("FLAG_RECV_CLOSE",String,FLAG_RECV_CLOSE)
+Variable.UDT.uPO.Define("CUST_ID",String)
+Variable.UDT.uPO.Define("OEM",String)
+Variable.UDT.uPO.Define("BBool",String)
+Variable.uGlobal.uPO.Declare("uPO")
+Variable.Global.iBrowse.Declare(Long,0)
+Variable.Global.sJob.Declare(String)
+Variable.Global.sSuff.Declare(String)
+Variable.Global.bexecute.Declare(Boolean,False)
+Variable.Global.sPO.Declare(String)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.bboolean.Declare(Boolean)
+
+'This is a custom program for General Equipment Company that allows the user to generate serial numbers based on specific criteria.
+'These serial numbers along with other data will be stored in custom SQL tables.
+'The program will only run for users who are a part of the GEC_MFG security group.
+'Users will be able to update information/alter previously saved data.
+'Coded by: WAW
+'Date: 05/09/2016
+
+'check to make sure the user is in the security group GEC_MFG
+F.Global.Security.IsInGroup(V.Caller.User,"GEC_MFG",V.Local.bboolean)
+
+''see if the user is in fact a part of that group
+'F.Intrinsic.Control.If(V.Local.bboolean,=,"false")
+'	F.Intrinsic.UI.Msgbox("You do not meet the credentials needed to run this program")
+'	F.Intrinsic.Control.End
+'F.Intrinsic.Control.EndIf
+
+'Open connection
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+'populate the drop down list
+Gui.Form1.dropdownlist1.AddItem("Work Order")
+Gui.Form1.dropdownlist1.AddItem("Purchase Order")
+Gui.Form1.dropdownlist1.AddItem("OEM Maintenance")
+
+'display the form
+Gui.Form1..Visible(true)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+program.sub.form1_unload.start
+F.Intrinsic.Control.SetErrorHandler("form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'close the connections
+F.ODBC.Connection!conx.Close
+
+'end the program
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.form1_unload.end
+
+program.sub.cmdcontinue_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdcontinue_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'make sure something was selected in the drop down list
+F.Intrinsic.Control.If(V.Screen.Form1!dropdownlist1.Text,=,"")
+	F.Intrinsic.UI.Msgbox("No category was selected")
+	F.intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'close the first form
+Gui.Form1..Visible(false)
+
+'check to see which category was selected
+F.Intrinsic.Control.If(V.Screen.Form1!dropdownlist1.Text,=,"Work Order")
+	F.Intrinsic.Control.CallSub(Wo)
+F.Intrinsic.Control.ElseIf(V.Screen.Form1!dropdownlist1.Text,=,"Purchase Order")
+	F.Intrinsic.Control.CallSub(Po)
+F.Intrinsic.Control.ElseIf(V.Screen.Form1!dropdownlist1.Text,=,"OEM Maintenance")
+	F.Intrinsic.Control.CallSub(Oem)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdcontinue_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdcontinue_click.end
+
+program.sub.fworkorder_unload.start
+F.Intrinsic.Control.SetErrorHandler("fworkorder_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'close the form
+Gui.FWorkOrder..Visible(false)
+
+'clear the wo textbox
+Gui.FWorkOrder.txtWO.Text("")
+
+'make the first form visible again
+Gui.Form1..Visible(true)
+
+'lock the execute button
+Gui.FWorkOrder.cmdWOExecute.Enabled(false)
+
+F.Intrinsic.Control.ExitSub
+
+	F.Intrinsic.Control.Label("fworkorder_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.fworkorder_unload.end
+
+program.sub.cmdwoexecute_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdwoexecute_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.iserial.Declare(Long)
+V.Local.iloopcount.Declare(Long)
+V.Local.sstartserial.Declare(String)
+V.Local.sendserial.Declare(String)
+V.Local.smessage.Declare(String)
+V.Local.ssql2.Declare(String)
+V.Local.sduplicatessql.Declare(String)
+V.Local.supdatelastserialssql.Declare(String)
+V.Local.supdatelastserialssql2.Declare(String)
+V.Local.slastssql.Declare(String)
+V.Local.salreadyexistmsg.Declare(String)
+V.Local.sfinalmsg.Declare(String)
+
+'check to see if this is an OEM part
+F.Intrinsic.Control.If(V.Global.bOEM,=,"True")
+	'if so get the last serial number from the OEM table based on customer
+	F.Intrinsic.String.Build("Select MAX(SERIAL) as SERIAL from GCG_3737_GEC_OEM where CUST_ID = '{0}' and SERIAL IS NOT NULL",V.global.sCustomer,V.local.ssql)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+		'set the max serial and then add 1
+		V.Local.iserial.Set(V.odbc.conx!rst.FieldValTrim!SERIAL)
+		F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+		V.Local.sstartserial.Set(V.Local.iserial)
+		'check to make sure there are not duplicates for that part/wo
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where PART = '{0}' and ORDERNO = '{1}'",V.Global.sPart,V.Global.sOrderNo,V.Local.sduplicatessql)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstDuplicate",V.Local.sduplicatessql)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstduplicate.EOF,=,False)
+			F.Intrinsic.String.Build("Serial numbers already exist for Part: {0} and Work Order: {1}",V.Global.sPart,V.Global.sOrderNo,V.Local.salreadyexistmsg)
+			F.Intrinsic.UI.Msgbox(V.Local.salreadyexistmsg)
+				'close the connection
+			F.ODBC.conx!rstduplicate.Close
+			F.ODBC.conx!rst.Close
+			'close the wait dialog
+			F.Intrinsic.UI.CloseWaitDialog
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		'close the connection
+		F.ODBC.conx!rstduplicate.Close
+
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+			'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+			F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Global.sCustomer)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.Else
+			'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+			F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Global.sCustomer)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		V.Local.iserial.Set(1)
+		V.Local.sstartserial.Set(V.Local.iserial)
+
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Global.sCustomer)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+
+		F.Intrinsic.Control.Else
+			'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+			F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Global.sCustomer)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.EndIf
+	'close the connection
+	F.ODBC.conx!rst.Close
+
+'generate the serial numbers generally
+F.Intrinsic.Control.Else
+
+	'if so get the last serial number from the Serial table based on customer
+	F.Intrinsic.String.Build("Select MAX(SERIAL) as SERIAL from GCG_3737_GEC_SERIAL where CUST_ID = '{0}' and SERIAL IS NOT NULL","99999",V.local.ssql)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+		'set the max serial and then add 1
+		V.Local.iserial.Set(V.odbc.conx!rst.FieldValTrim!SERIAL)
+		F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+		V.Local.sstartserial.Set(V.Local.iserial)
+
+		'check to make sure there are not duplicates for that part/wo
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where PART = '{0}' and ORDERNO = '{1}'",V.Global.sPart,V.Global.sOrderNo,V.Local.sduplicatessql)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstDuplicate",V.Local.sduplicatessql)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstduplicate.EOF,=,False)
+			F.Intrinsic.String.Build("Serial numbers already exist for Part: {0} and Work Order: {1}",V.Global.sPart,V.Global.sOrderNo,V.Local.salreadyexistmsg)
+			F.Intrinsic.UI.Msgbox(V.Local.salreadyexistmsg)
+			'close the connection
+			F.ODBC.conx!rstduplicate.Close
+			F.ODBC.conx!rst.Close
+			'close the wait dialog
+			F.Intrinsic.UI.CloseWaitDialog
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		'close the connection
+		F.ODBC.conx!rstduplicate.Close
+
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+			'loop through the count and write the serial numbers to the GCG_3737_GEC_SERIAL table
+			F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.Else
+			'loop through the count and write the serial numbers to the GCG_3737_GEC_SERIAL table
+			F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'set the serial number to 0
+		V.Local.iserial.Set(1)
+		V.Local.sstartserial.Set(V.Local.iserial)
+		F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.Else
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.global.fQty,1)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!PART(V.Global.sPart)
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+				F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+				F.ODBC.conx!rstwrite.Set!ORDERNO(V.Global.sOrderNo)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Next(V.Local.iloopcount)
+			'subtract 1 for the message box
+			F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+'			V.Local.sendserial.Set(V.Local.iserial)
+			'close the connection
+			F.ODBC.conx!rstwrite.Close
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	'close the connection
+	F.ODBC.conx!rst.Close
+F.Intrinsic.Control.EndIf
+
+	'update the last serial number in the GCG_3737_GEC_LAST table
+	F.Intrinsic.String.Build("Select * from GCG_3737_GEC_LAST where CUST_ID <> '{0}'","",V.Local.supdatelastserialssql)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast",V.Local.supdatelastserialssql)
+	F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast.EOF,=,False)
+		'check to see if an OEM
+		F.Intrinsic.Control.If(V.Global.bOEM,=,"True")
+			'see if that customer is already in the table
+			F.intrinsic.string.build("Select * from GCG_3737_GEC_LAST where CUST_ID = '{0}'",V.global.sCustomer,V.Local.supdatelastserialssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast2",V.Local.supdatelastserialssql2)
+			'if the customer is found update their last serial
+			F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast2.EOF,=,False)
+				F.intrinsic.string.build("update GCG_3737_GEC_LAST set LAST_SERIAL = '{0}' where CUST_ID = '{1}'",V.Local.sendserial,V.global.sCustomer,V.Local.slastssql)
+				F.ODBC.Connection!conX.Execute(V.Local.slastssql)
+			F.Intrinsic.Control.Else
+				'otherwise add them
+				F.ODBC.conx!rstUpdateLast.AddNew
+				F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+				F.ODBC.conx!rstUpdateLast.Set!CUST_ID(V.global.sCustomer)
+				F.ODBC.conx!rstUpdateLast.Update
+			F.Intrinsic.Control.EndIf
+			'close the connection
+			F.ODBC.conx!rstUpdateLast2.Close
+		F.Intrinsic.Control.Else
+			'otherwise if general use 99999
+			'see if that customer is already in the table
+			F.intrinsic.string.build("Select * from GCG_3737_GEC_LAST where CUST_ID = '{0}'","99999",V.Local.supdatelastserialssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast2",V.Local.supdatelastserialssql2)
+			'if the customer is found update their last serial
+			F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast2.EOF,=,False)
+				F.intrinsic.string.build("update GCG_3737_GEC_LAST set LAST_SERIAL = '{0}' where CUST_ID = '{1}'",V.Local.sendserial,"99999",V.Local.slastssql)
+				F.ODBC.Connection!conX.Execute(V.Local.slastssql)
+			F.Intrinsic.Control.Else
+				'otherwise if general use 99999
+				F.ODBC.conx!rstUpdateLast.AddNew
+				F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+				F.ODBC.conx!rstUpdateLast.Set!CUST_ID("99999")
+				F.ODBC.conx!rstUpdateLast.Update
+			F.intrinsic.control.endif
+		F.intrinsic.control.endif
+	F.Intrinsic.Control.Else
+		'check to see if an OEM
+		F.Intrinsic.Control.If(V.Global.bOEM,=,"True")
+			F.ODBC.conx!rstUpdateLast.AddNew
+			F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+			F.ODBC.conx!rstUpdateLast.Set!CUST_ID(V.global.sCustomer)
+			F.ODBC.conx!rstUpdateLast.Update
+		F.Intrinsic.Control.Else
+			'otherwise if general use 99999
+			F.ODBC.conx!rstUpdateLast.AddNew
+			F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+			F.ODBC.conx!rstUpdateLast.Set!CUST_ID("99999")
+			F.ODBC.conx!rstUpdateLast.Update
+		F.intrinsic.control.endif
+	F.Intrinsic.Control.EndIf
+
+	'close the connection
+	F.ODBC.conx!rstUpdateLast.Close
+
+Gui.FWorkOrder.txtWO.Text("")
+Gui.FWorkOrder.cmdWOExecute.Enabled(false)
+
+'close the wait dialog
+F.Intrinsic.UI.CloseWaitDialog
+
+'display the numbers that were generated on a message box
+F.Intrinsic.String.Build("Serial numbers created for Work Order: {0}: {1} - {2}",V.global.sorderno,V.Local.sstartserial,V.Local.sendserial,V.Local.smessage)
+F.Intrinsic.UI.Msgbox(V.Local.smessage)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdwoexecute_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdwoexecute_click.end
+
+Program.Sub.WO.Start
+F.Intrinsic.Control.SetErrorHandler("WO_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'display the second form
+Gui.FWorkOrder..Visible(true)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("WO_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.WO.End
+
+program.sub.cmdwobrowser_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdwobrowser_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sret.Declare(String)
+V.Local.swo.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.spart.Declare(String)
+V.Local.bboolean.Declare(Boolean)
+V.Local.ssql2.Declare(String)
+V.Local.srev.Declare(String)
+V.Local.ssql3.Declare(String)
+V.Local.smessage.Declare(String)
+V.Local.bbrowse.Declare(Boolean)
+
+'set the type ahead
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+
+V.global.ibrowse.Set(1)
+
+''see if the browser was selected or if the user typed in a job-suffix
+'F.Intrinsic.Control.If(V.Screen.FWorkOrder!txtWO.Text,=,"")
+'''F.Intrinsic.Control.If(V.global.ibrowse,=,1)
+''	V.Local.bbrowse.Set(True)
+''	'call the work order browser
+'	F.Intrinsic.UI.Browser(1000,"",V.Local.sret)
+''	'check to make sure a work order was selected
+'	F.Intrinsic.Control.If(V.Local.sret,=,"***CANCEL***")
+'		F.Intrinsic.UI.Msgbox("No Work Order was selected.")
+'		F.Intrinsic.Control.ExitSub
+'	F.Intrinsic.Control.Endif
+''	'split the return
+'	F.Intrinsic.String.split(V.Local.sret,"*!*",V.Local.sret)
+'	F.Intrinsic.String.Build("{0}-{1}",V.Local.sret(0),V.Local.sret(1),V.Local.swo)
+'F.Intrinsic.Control.Else
+'	V.Local.sret.Set(V.Screen.FWorkOrder!txtWO.Text)
+'	'split the return
+'	F.Intrinsic.String.split(V.Local.sret,"-",V.Local.sret)
+'	V.Local.swo.Set(V.Screen.FWorkOrder!txtWO.Text)
+'	V.Local.bbrowse.Set(False)
+''	F.Intrinsic.String.Build("{0}-{1}",V.Local.sret(0),V.Local.sret(1),V.Local.swo)
+'	V.Global.iBrowse.Set(0)
+'F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.FWorkOrder!txtWO.Text,=,"")
+'F.Intrinsic.Control.AndIf(V.Global.iBrowse,=,1)
+'	F.Intrinsic.Control.If(V.Global.sjob.Trim,=,)
+	V.Global.iBrowse.Set(0)
+		'call the work order browser
+		F.Intrinsic.UI.Browser(1000,"",V.Local.sret)
+		'check to make sure a work order was selected
+		F.Intrinsic.Control.If(V.Local.sret,=,"***CANCEL***")
+			F.Intrinsic.UI.Msgbox("No Work Order was selected.")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Endif
+		'split the return
+		F.Intrinsic.String.split(V.Local.sret,"*!*",V.Local.sret)
+		F.Intrinsic.String.Build("{0}-{1}",V.Local.sret(0),V.Local.sret(1),V.Local.swo)
+		V.global.sJob.Set(V.Local.sret(0).Trim)
+		V.Global.sSuff.Set(V.Local.sret(1).Trim)
+'	F.Intrinsic.Control.Endif
+F.Intrinsic.Control.Else
+'	V.Global.bexecute.Set(False)
+F.Intrinsic.Control.EndIf
+'V.Global.bexecute.Set(False)
+
+F.Intrinsic.String.Build("{0}-{1}",V.global.sjob.trim,V.global.sSuff.Trim,V.Local.swo)
+
+'set the work order number
+V.Global.sOrderNo.Set(V.Local.swo)
+
+''set the work order selected in the textbox
+'Gui.FWorkOrder.txtWO.Text(V.Local.swo)
+
+'set the boolean as false
+V.Local.bboolean.Set(False)
+V.Global.bOEM.Set(False)
+V.Local.buser.Declare(Boolean)
+
+V.Local.buser.Set(False)
+
+'check to see if the WO is open
+F.Intrinsic.String.Build("Select PART, LOCATION, DATE_CLOSED,QTY_ORDER  from V_JOB_HEADER where JOB = '{0}' and SUFFIX = '{1}'",V.global.sJob.Trim,V.global.sSuff.Trim,V.Local.ssql)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+
+'	'get the part for that WO
+	V.Local.spart.Set(V.ODBC.conx!rst.FieldValTrim!PART)
+	V.Global.sPart.Set(V.ODBC.conx!rst.FieldValTrim!PART)
+
+	'set the QTY
+	V.Global.fQty.Set(V.ODBC.conx!rst.FieldValFloat!QTY_ORDER)
+
+'	F.Intrinsic.String.Right(V.local.spart,3,V.local.srev)
+	F.Intrinsic.String.Left(V.local.spart,17,V.local.spart)
+
+	'get the customer and set the oem boolean to true
+	F.intrinsic.String.Build("Select USER3 from INV_EXTRA where PART = '{0}' and  LOCATION = '{1}'",V.Local.spart.Trim,V.ODBC.conx!rst.FieldValTrim!LOCATION,V.Local.ssql2)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstOEM",V.Local.ssql2)
+	F.Intrinsic.Control.If(V.ODBC.conX!rstOEM.EOF,=,False)
+		V.Global.sCustomer.Set(V.ODBC.conx!rstOEM.FieldValTrim!USER3)
+
+		'check to make sure the customer is valid
+		F.Intrinsic.String.build("Select CUSTOMER from V_CUSTOMER_MASTER where CUSTOMER = '{0}'",V.global.sCustomer.Trim,V.Local.ssql3)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstCustomer",V.Local.ssql3)
+		'if the customer does not exist inform the user and exit the sub
+		F.Intrinsic.Control.If(V.ODBC.conX!rstCustomer.EOF,=,True)
+			V.Local.buser.Set(True)
+'			F.intrinsic.string.build("Customer: '{0}' does not exist in Global Shop. Serial number generation has been canceled. Please contact the Sales Department to correct.",V.global.scustomer,V.Local.smessage)
+'			F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+'			Gui.FWorkOrder.txtWO.Text("")
+			'close the oem connection
+'			F.ODBC.conx!rstoem.Close
+			'close the cust connection
+'			F.ODBC.conx!rstcustomer.Close
+			'close the serial connection
+'			F.ODBC.conx!rst.Close
+'			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.Else
+			V.Global.bOEM.Set(True)
+
+		F.Intrinsic.Control.EndIf
+
+		'close the cust connection
+		F.ODBC.conx!rstcustomer.Close
+
+		'set the oem global variable as true
+
+'		V.Global.bOEM.Set(True)
+	F.Intrinsic.Control.EndIf
+	'close the oem connection
+	F.ODBC.conx!rstoem.Close
+	
+	'check to see if the part is marked as a seriallized
+	F.intrinsic.String.Build("Select FLAG_SERIALIZE from V_INVENTORY_MSTR where PART = '{0}' and LOCATION = '{1}'",V.Local.spart.Trim,V.ODBC.conx!rst.FieldValTrim!LOCATION,V.Local.ssql2)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstSerial",V.Local.ssql2)
+	F.Intrinsic.Control.If(V.ODBC.conX!rstSerial.EOF,=,False)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstSerial.FieldValTrim!FLAG_SERIALIZE,=,"Y")
+			V.Local.bboolean.Set(True)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	'close the serial connection
+	F.ODBC.conx!rstSerial.Close
+
+	'see if the wo is open
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.FieldValTrim!DATE_CLOSED,=,"")
+		V.Local.bboolean.Set(True)
+	F.Intrinsic.Control.ElseIf(V.ODBC.conx!rst.FieldValTrim!DATE_CLOSED,=,"000000")
+		V.Local.bboolean.Set(True)
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Global.bOEM,=,True)
+F.Intrinsic.Control.AndIf(V.Local.buser,=,True)
+	F.intrinsic.string.build("Customer: '{0}' does not exist in Global Shop. Serial number generation has been canceled. Please contact the Sales Department to correct.",V.global.scustomer,V.Local.smessage)
+	F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+	F.ODBC.conx!rst.Close
+	Gui.FWorkOrder.txtWO.Text("")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'if the boolean is true unlock the execute button
+F.Intrinsic.Control.If(V.Local.bboolean,=,"True")
+	Gui.FWorkOrder.cmdWOExecute.Enabled(true)
+'	close the connection
+	F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.CallSub(Cmdwoexecute_click)
+F.Intrinsic.Control.Else
+	'close the connection
+	F.ODBC.conx!rst.Close
+	Gui.FWorkOrder.cmdWOExecute.Enabled(false)
+F.Intrinsic.Control.EndIf
+
+
+V.Global.iBrowse.Set(1)
+
+F.Intrinsic.Control.Label("cmdwobrowser_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdwobrowser_click.end
+
+Program.Sub.PO.Start
+F.Intrinsic.Control.SetErrorHandler("PO_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'display the PO form
+Gui.FPO..Visible(true)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("PO_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.PO.End
+
+program.sub.fpo_unload.start
+F.Intrinsic.Control.SetErrorHandler("fpo_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'close the form
+Gui.FPO..Visible(false)
+
+'clear the wo textbox
+Gui.FPO.txtPO.Text("")
+
+'make the first form visible again
+Gui.Form1..Visible(true)
+
+'lock the command button
+Gui.FPO.cmdPOExecute.Enabled(false)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("fpo_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.fpo_unload.end
+
+program.sub.cmdpobrowse_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdpobrowse_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sret.Declare(String)
+V.Local.spo.Declare(String)
+V.Local.ssql2.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.bboolean.Declare(Boolean)
+V.Local.spart.Declare(String)
+V.Local.srev.Declare(String)
+V.Local.ssql3.Declare(String)
+V.Local.smessage.Declare(String)
+V.Local.ipocount.Declare(String)
+
+F.Intrinsic.Control.If(V.screen.FPO!txtPO.Text,=,"")
+
+	'set the type ahead
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	'call the work order browser
+	F.Intrinsic.UI.Browser(4000,"",V.Local.sret)
+	V.Global.bexecute.Set(False)
+
+
+	'check to make sure a work order was selected
+	F.Intrinsic.Control.If(V.Local.sret,=,"***CANCEL***")
+		F.Intrinsic.UI.Msgbox("No Work Order was selected.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.Else
+		'split the return
+		F.Intrinsic.String.split(V.Local.sret,"*!*",V.Local.sret)
+		V.Global.sPO.Set(V.Local.sret(0).Trim)
+	F.Intrinsic.Control.Endif
+F.Intrinsic.Control.Else
+	V.Local.sret(0).Set(V.Global.sPO.Trim)
+	V.Global.bexecute.Set(False)
+
+F.Intrinsic.Control.EndIf
+
+'split the return
+F.Intrinsic.String.split(V.Local.sret,"*!*",V.Local.sret)
+
+'f.Intrinsic.Control.If(v.Global.
+
+''set the work order selected in the textbox
+Gui.FPO.txtPO.Text(V.Local.sret(0))
+
+'check to see if the PO is open
+F.Intrinsic.string.Build("Select PURCHASE_ORDER, RECORD_NO, PART, LOCATION, QTY_ORDER, FLAG_RECV_CLOSE from V_PO_LINES where PURCHASE_ORDER = '{0}'",V.local.sret(0),V.Local.ssql)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+	'redim the po udt
+	V.uGlobal.uPO.Redim(-1,-1)
+	F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uGlobal.uPO",True)
+
+	'loop through the PO UDT
+	F.Intrinsic.Control.For(V.Local.ipocount,V.uGlobal.uPO.LBound,V.uGlobal.uPO.UBound,1)
+
+		F.Intrinsic.String.Right(V.uglobal.uPO(v.Local.ipocount)!PART,3,V.local.srev)
+		F.Intrinsic.String.Left(V.uglobal.uPO(v.Local.ipocount)!PART,17,V.local.spart)
+
+		'get the customer and set the oem boolean to true
+		F.intrinsic.String.Build("Select USER3 from INV_EXTRA where PART = '{0}' and REV = '{1}' and  LOCATION = '{2}'",V.Local.spart,V.local.srev,V.uglobal.uPO(v.Local.ipocount)!LOCATION,V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstOEM",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstOEM.EOF,=,False)
+		V.uGlobal.upo(v.Local.ipocount)!CUST_ID.Set(V.ODBC.conx!rstOEM.FieldValTrim!USER3)
+
+			'check to make sure the customer is valid
+			F.Intrinsic.String.build("Select CUSTOMER from V_CUSTOMER_MASTER where CUSTOMER = '{0}'",V.uglobal.uPO(v.Local.ipocount)!CUST_ID,V.Local.ssql3)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstCustomer",V.Local.ssql3)
+			'if the customer does not exist inform the user and exit the sub
+			F.Intrinsic.Control.If(V.ODBC.conX!rstCustomer.EOF,=,True)
+				'redim the po udt
+				V.uGlobal.uPO.Redim(-1,-1)
+				F.intrinsic.string.build("Customer: '{0}' does not exist in Global Shop. Serial number generation has been canceled. Please contact the Sales Department to correct.",V.uglobal.uPO(v.Local.ipocount)!CUST_ID,V.Local.smessage)
+				F.Intrinsic.UI.Msgbox(V.Local.sMessage)
+				Gui.FPO.txtPO.Text("")
+				'close the oem connection
+				F.ODBC.conx!rstoem.Close
+				'close the cust connection
+				F.ODBC.conx!rstcustomer.Close
+				'close the serial connection
+				F.ODBC.conx!rstSerial.Close
+				Gui.FPO.cmdPOExecute.Enabled(false)
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+
+			'close the cust connection
+			F.ODBC.conx!rstcustomer.Close
+		
+			V.uGlobal.uPO(v.Local.ipocount)!OEM.Set("Y")
+'			V.Global.bOEM.Set(True)
+		F.Intrinsic.Control.EndIf
+		'close the oem connection
+		F.ODBC.conx!rstoem.Close
+		
+		'check to see if the part is marked as a seriallized
+		F.intrinsic.String.Build("Select FLAG_SERIALIZE from V_INVENTORY_MSTR where PART = '{0}' and LOCATION = '{1}'",V.Local.spart,V.uglobal.uPO(v.Local.ipocount)!LOCATION,V.Local.ssql2)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstSerial",V.Local.ssql2)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstSerial.EOF,=,False)
+			F.Intrinsic.Control.If(V.ODBC.conx!rstSerial.FieldValTrim!FLAG_SERIALIZE,=,"Y")
+				V.uGlobal.uPO(v.Local.ipocount)!BBool.Set("Y")
+'				V.Local.bboolean.Set(True)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		
+		'close the serial connection
+		F.ODBC.conx!rstSerial.Close
+
+		'see if the wo is open
+		F.Intrinsic.Control.If(V.uglobal.uPO(v.Local.ipocount)!FLAG_RECV_CLOSE,<>,"Y")
+			V.uGlobal.uPO(v.Local.ipocount)!BBool.Set("Y")
+'			V.Local.bboolean.Set(True)
+		F.Intrinsic.Control.Else
+			V.uGlobal.uPO(v.Local.ipocount)!BBool.Set("N")
+		F.Intrinsic.Control.EndIf
+
+		'check to see if the execute button needs to be unlocked and flag those that didn't validate
+		F.Intrinsic.Control.If(V.uGlobal.uPO(v.Local.ipocount)!BBool,=,"Y")
+			
+			Gui.FPO.cmdPOExecute.Enabled(true)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Variable.UDTFlagOrdinal(V.uGlobal.uPO,True,V.Local.ipocount)
+		F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.next(V.Local.ipocount)
+
+F.Intrinsic.Control.EndIf
+
+'delete the flagged ordinals
+F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uPO)
+
+F.Intrinsic.Control.If(V.Screen.FPO!txtPO.Enabled,=,True)
+	F.Intrinsic.Control.CallSub(Cmdpoexecute_click)
+F.Intrinsic.Control.EndIf
+
+'close the connection
+F.ODBC.conx!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdpobrowse_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+			Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdpobrowse_click.end
+
+program.sub.cmdpoexecute_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdpoexecute_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.ipoloop.Declare(Long)
+V.Local.ssql.Declare(String)
+V.Local.iserial.Declare(Long)
+V.Local.sstartserial.Declare(String)
+V.Local.sduplicatessql.Declare(String)
+V.Local.ssql2.Declare(String)
+V.Local.iloopcount.Declare(Long)
+V.Local.sendserial.Declare(String)
+V.Local.smessageline.Declare(String)
+V.Local.smessagefinal.Declare(String)
+V.Local.supdatenotes.Declare(String)
+V.Local.sordernum.Declare(String)
+V.Local.sorderline.Declare(String)
+V.Local.sorderssql.Declare(String)
+V.Local.snotes.Declare(String)
+V.Local.spoandline.Declare(String)
+V.Local.supdatelastserialssql.Declare(String)
+V.Local.supdatelastserialssql2.Declare(String)
+V.Local.slastssql.Declare(String)
+V.Local.salreadyexistsmsg.Declare(String)
+
+'tell the user serial numbers are being created
+F.Intrinsic.UI.InvokeWaitDialog("Generating Serial Numbers....")
+
+'loop through the PO UDT
+F.Intrinsic.Control.For(V.Local.ipoloop,V.uGlobal.uPO.LBound,V.uGlobal.uPO.UBound,1)
+
+'check to see if this is an OEM part
+	F.Intrinsic.Control.If(V.uglobal.uPO(v.Local.ipoloop)!OEM,=,"Y")
+		'if so get the last serial number from the OEM table based on customer
+		F.Intrinsic.String.Build("Select MAX(SERIAL) as SERIAL from GCG_3737_GEC_OEM where CUST_ID = '{0}' and SERIAL IS NOT NULL",V.uglobal.uPO(v.Local.ipoloop)!CUST_ID,V.local.ssql)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+		F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+			'set the max serial and then add 1
+			V.Local.iserial.Set(V.odbc.conx!rst.FieldValTrim!SERIAL)
+			F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+			V.Local.sstartserial.Set(V.Local.iserial)
+			F.Intrinsic.String.Build("{0}-{1}",V.uGlobal.uPO(v.Local.ipoloop)!PURCHASE_ORDER,V.uGlobal.uPO(v.Local.ipoloop)!RECORD_NO,V.Local.spoandline)
+
+			'check to make sure there are not duplicates for that part/wo
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where PART = '{0}' and ORDERNO = '{1}'",V.uglobal.uPO(v.Local.ipoloop)!PART,V.local.spoandline,V.Local.sduplicatessql)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstDuplicate",V.Local.sduplicatessql)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstduplicate.EOF,=,False)
+				F.Intrinsic.String.Build("Serial numbers already exist for Part: {0} and Purchase Order: {1}",V.uglobal.uPO(v.local.ipoloop)!PART,V.local.spoandline,V.Local.salreadyexistsmsg)
+				F.Intrinsic.UI.Msgbox(V.Local.salreadyexistsmsg)
+				'close the connection
+				F.ODBC.conx!rstduplicate.Close
+				F.ODBC.conx!rst.Close
+				'close the wait dialog
+				F.Intrinsic.UI.CloseWaitDialog
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			'close the connection
+			F.ODBC.conx!rstduplicate.Close
+
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+					F.ODBC.conx!rstwrite.AddNew
+					F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+					F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+					F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+					F.ODBC.conx!rstwrite.Set!ORDERNO(V.Local.spoandline)
+					F.ODBC.conx!rstwrite.Set!CUST_ID(V.uglobal.upo(v.Local.ipoloop)!CUST_ID)
+					F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.Else
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+					F.ODBC.conx!rstwrite.AddNew
+					F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+					F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+					F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+					F.ODBC.conx!rstwrite.Set!ORDERNO(V.Local.spoandline)
+					F.ODBC.conx!rstwrite.Set!CUST_ID(V.uglobal.upo(v.Local.ipoloop)!CUST_ID)
+					F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			V.Local.iserial.Set(1)
+			V.Local.sstartserial.Set(V.Local.iserial)
+
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+					'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+					F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+						F.ODBC.conx!rstwrite.AddNew
+						F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+						F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+						F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+						F.ODBC.conx!rstwrite.Set!ORDERNO(V.local.spoandline)
+						F.ODBC.conx!rstwrite.Set!CUST_ID(V.uglobal.upo(v.Local.ipoloop)!CUST_ID)
+						F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+
+			F.Intrinsic.Control.Else
+					'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+					F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+						F.ODBC.conx!rstwrite.AddNew
+						F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+						F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+						F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+						F.ODBC.conx!rstwrite.Set!ORDERNO(V.Local.spoandline)
+						F.ODBC.conx!rstwrite.Set!CUST_ID(V.uglobal.upo(v.Local.ipoloop)!CUST_ID)
+						F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+
+			F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.EndIf
+		'close the connection
+		F.ODBC.conx!rst.Close
+
+	'generate the serial numbers generally
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("{0}-{1}",V.uGlobal.uPO(v.Local.ipoloop)!PURCHASE_ORDER,V.uGlobal.uPO(v.Local.ipoloop)!RECORD_NO,V.Local.spoandline)
+
+		'if so get the last serial number from the Serial table based on customer
+		F.Intrinsic.String.Build("Select MAX(SERIAL) as SERIAL from GCG_3737_GEC_SERIAL where CUST_ID = '{0}' and SERIAL IS NOT NULL","99999",V.local.ssql)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+		F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+			'set the max serial and then add 1
+			V.Local.iserial.Set(V.odbc.conx!rst.FieldValTrim!SERIAL)
+			F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+			V.Local.sstartserial.Set(V.Local.iserial)
+
+			'check to make sure there are not duplicates for that part/wo
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where PART = '{0}' and ORDERNO = '{1}'",V.uglobal.uPO(v.Local.ipoloop)!PART,V.local.spoandline,V.Local.sduplicatessql)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstDuplicate",V.Local.sduplicatessql)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstduplicate.EOF,=,False)
+'				F.Intrinsic.UI.Msgbox("Serial numbers already exist for that Part/Purchase Order.")
+				F.Intrinsic.String.Build("Serial numbers already exist for Part: {0} and Purchase Order: {1}",V.uglobal.uPO(v.local.ipoloop)!PART,V.local.spoandline,V.Local.salreadyexistsmsg)
+				F.Intrinsic.UI.Msgbox(V.Local.salreadyexistsmsg)
+				'close the connection
+				F.ODBC.conx!rstduplicate.Close
+				F.ODBC.conx!rst.Close
+				'close the wait dialog
+				F.Intrinsic.UI.CloseWaitDialog
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			'close the connection
+			F.ODBC.conx!rstduplicate.Close
+
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_SERIAL table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+					F.ODBC.conx!rstwrite.AddNew
+					F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+					F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+					F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+					F.ODBC.conx!rstwrite.Set!ORDERNO(V.local.spoandline)
+					F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+					F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.Else
+				'loop through the count and write the serial numbers to the GCG_3737_GEC_SERIAL table
+				F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+					F.ODBC.conx!rstwrite.AddNew
+					F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+					F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+					F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+					F.ODBC.conx!rstwrite.Set!ORDERNO(V.local.spoandline)
+					F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+					F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			'set the serial number to 0
+			V.Local.iserial.Set(1)
+			V.Local.sstartserial.Set(V.Local.iserial)
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where SERIAL {0}","IS NOT NULL",V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+					'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+					F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+						F.ODBC.conx!rstwrite.AddNew
+						F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+						F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+						F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+						F.ODBC.conx!rstwrite.Set!ORDERNO(V.local.spoandline)
+						F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+						F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.Else
+					'loop through the count and write the serial numbers to the GCG_3737_GEC_OEM table
+					F.Intrinsic.Control.For(V.Local.iloopcount,1,V.uglobal.uPO(v.Local.ipoloop)!QTY_ORDER,1)
+						F.ODBC.conx!rstwrite.AddNew
+						F.ODBC.conx!rstwrite.Set!PART(V.uglobal.upo(v.Local.ipoloop)!PART)
+						F.ODBC.conx!rstwrite.Set!SERIAL(V.local.iserial)
+						F.Intrinsic.Math.Add(V.Local.iserial,1,V.Local.iserial)
+						F.ODBC.conx!rstwrite.Set!ORDERNO(V.Local.spoandline)
+						F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+						F.ODBC.conx!rstwrite.Update
+				F.Intrinsic.Control.Next(V.Local.iloopcount)
+				'subtract 1 for the message box
+				F.Intrinsic.Math.Sub(V.Local.iserial,1,V.Local.sendserial)
+	'			V.Local.sendserial.Set(V.Local.iserial)
+				'close the connection
+				F.ODBC.conx!rstwrite.Close
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		'close the connection
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.EndIf
+
+	'display the numbers that were generated on a message box
+	F.Intrinsic.Control.If(V.Local.smessagefinal,=,"")
+		F.Intrinsic.String.Build("Serial numbers created: {0}{1} - {2} for {3}",V.ambient.newline,V.Local.sstartserial,V.Local.sendserial,V.local.spoandline,V.Local.smessagefinal)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.build("{0}{1}{2} - {3} for {4}",V.Local.smessagefinal,V.Ambient.NewLine,V.Local.sstartserial,V.Local.sendserial,V.local.spoandline,V.Local.smessagefinal)
+	F.Intrinsic.Control.EndIf
+
+	'get the order number and order line to be able to update the purch notes
+	F.Intrinsic.String.build("Select ORDER_NO, RECORD_NO from V_ORDER_LINES where FLAG_PURCHASED = '{0}' and PART = '{1}'","Y",V.uglobal.upo(v.local.ipoloop)!PART,V.local.sorderssql)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rstorder",V.Local.sorderssql)
+	F.Intrinsic.Control.If(V.ODBC.conX!rstorder.EOF,=,False)
+		V.Local.sordernum.Set(V.ODBC.conx!rstorder.FieldValTrim!ORDER_NO)
+		V.Local.sorderline.Set(V.ODBC.conx!rstorder.FieldValTrim!RECORD_NO)
+		'put the beginning and ending serial numbers together to update the purch notes with
+		F.Intrinsic.String.Build("{0} - {1}",V.Local.sstartserial,V.Local.sendserial,V.local.snotes)
+		F.intrinsic.string.build("update SO_LINE_NOTES set NOTE_TEXT = '{0}' where ORDER_NO = '{1}' and ORDER_LINE = '{2}'",V.Local.snotes,V.Local.sordernum,V.local.sorderline,V.Local.supdatenotes)
+		F.ODBC.Connection!conX.Execute(V.Local.supdatenotes)
+	F.Intrinsic.Control.EndIf
+	'close the connection
+	F.ODBC.conx!rstorder.Close
+
+	'update the last serial number in the GCG_3737_GEC_LAST table
+	F.Intrinsic.String.Build("Select * from GCG_3737_GEC_LAST where CUST_ID <> '{0}'","",V.Local.supdatelastserialssql)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast",V.Local.supdatelastserialssql)
+	F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast.EOF,=,False)
+		'check to see if an OEM
+		F.Intrinsic.Control.If(V.uGlobal.uPO(v.Local.ipoloop)!OEM,=,"Y")
+			'see if that customer is already in the table
+			F.intrinsic.string.build("Select * from GCG_3737_GEC_LAST where CUST_ID = '{0}'",V.uglobal.upo(v.local.ipoloop)!cust_id,V.Local.supdatelastserialssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast2",V.Local.supdatelastserialssql2)
+			'if the customer is found update their last serial
+			F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast2.EOF,=,False)
+				F.intrinsic.string.build("update GCG_3737_GEC_LAST set LAST_SERIAL = '{0}' where CUST_ID = '{1}'",V.Local.sendserial,V.uglobal.upo(v.local.ipoloop)!cust_id,V.Local.slastssql)
+				F.ODBC.Connection!conX.Execute(V.Local.slastssql)
+			F.Intrinsic.Control.Else
+				'otherwise add them
+				F.ODBC.conx!rstUpdateLast.AddNew
+				F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+				F.ODBC.conx!rstUpdateLast.Set!CUST_ID(V.uGlobal.uPO(v.local.ipoloop)!CUST_ID)
+				F.ODBC.conx!rstUpdateLast.Update
+			F.Intrinsic.Control.EndIf
+			'close the connection
+			F.ODBC.conx!rstUpdateLast2.Close
+
+		F.Intrinsic.Control.Else
+			'otherwise if general use 99999
+			'see if that customer is already in the table
+			F.intrinsic.string.build("Select * from GCG_3737_GEC_LAST where CUST_ID = '{0}'","99999",V.Local.supdatelastserialssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstUpdateLast2",V.Local.supdatelastserialssql2)
+			'if the customer is found update their last serial
+			F.Intrinsic.Control.If(V.ODBC.conX!rstUpdateLast2.EOF,=,False)
+				F.intrinsic.string.build("update GCG_3737_GEC_LAST set LAST_SERIAL = '{0}' where CUST_ID = '{1}'",V.Local.sendserial,"99999",V.Local.slastssql)
+				F.ODBC.Connection!conX.Execute(V.Local.slastssql)
+			F.Intrinsic.Control.Else
+				'otherwise if general use 99999
+				F.ODBC.conx!rstUpdateLast.AddNew
+				F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+				F.ODBC.conx!rstUpdateLast.Set!CUST_ID("99999")
+				F.ODBC.conx!rstUpdateLast.Update
+			F.intrinsic.control.endif
+
+		F.intrinsic.control.endif
+	F.Intrinsic.Control.Else
+		'check to see if an OEM
+		F.Intrinsic.Control.If(V.uGlobal.uPO(v.Local.ipoloop)!OEM,=,"Y")
+			F.ODBC.conx!rstUpdateLast.AddNew
+			F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+			F.ODBC.conx!rstUpdateLast.Set!CUST_ID(V.uGlobal.uPO(v.local.ipoloop)!CUST_ID)
+			F.ODBC.conx!rstUpdateLast.Update
+		F.Intrinsic.Control.Else
+			'otherwise if general use 99999
+			F.ODBC.conx!rstUpdateLast.AddNew
+			F.ODBC.conx!rstUpdateLast.Set!LAST_SERIAL(V.local.sendserial)
+			F.ODBC.conx!rstUpdateLast.Set!CUST_ID("99999")
+			F.ODBC.conx!rstUpdateLast.Update
+		F.intrinsic.control.endif
+	F.Intrinsic.Control.EndIf
+
+	'close the connection
+	F.ODBC.conx!rstUpdateLast.Close
+
+F.Intrinsic.Control.Next(V.Local.ipoloop)
+
+'close the wait dialog
+F.Intrinsic.UI.CloseWaitDialog
+
+Gui.FPO.txtPO.Text("")
+Gui.FPO.cmdPOExecute.Enabled(false)
+V.Global.bexecute.Set(False)
+F.Intrinsic.UI.Msgbox(V.Local.smessagefinal)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdpoexecute_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdpoexecute_click.end
+
+Program.Sub.OEM.Start
+F.Intrinsic.Control.SetErrorHandler("OEM_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'make the form visible
+Gui.fOEM..Visible(true)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("OEM_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.OEM.End
+
+program.sub.cmdcustbrowse_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdcustbrowse_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sret.Declare(String)
+
+
+'set the type ahead
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+
+'call the work order browser
+F.Intrinsic.UI.Browser(205,"",V.Local.sret)
+
+'check to make sure a work order was selected
+F.Intrinsic.Control.If(V.Local.sret,=,"***CANCEL***")
+	F.Intrinsic.UI.Msgbox("No Customer was selected.")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Endif
+
+'split the return
+F.Intrinsic.String.split(V.Local.sret,"*!*",V.Local.sret)
+'
+''set the work order selected in the textbox
+Gui.FOEM.txtCustomer.Text(V.Local.sret(0))
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdcustbrowse_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdcustbrowse_click.end
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.smessage.Declare(String)
+V.Local.ssql.Declare(String)
+V.Local.fnew.Declare(Float)
+V.Local.flast.Declare(Float)
+V.Local.snew.Declare(String)
+V.Local.slast.Declare(String)
+V.Local.ssql2.Declare(String)
+V.Local.fcheck.Declare(Float)
+
+'make sure the textboxes have text in them
+F.Intrinsic.Control.If(V.screen.fOEM!txtCustomer.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please select a customer")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.ElseIf(V.Screen.fOEM!txtSerialNum.Text,=,"")
+		F.Intrinsic.UI.Msgbox("Please enter a new starting serial number")
+		F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'set the serial number entered by the user
+V.Local.snew.Set(V.Screen.fOEM!txtSerialNum.Text)
+F.Intrinsic.Math.ConvertToFloat(V.Local.snew,V.Local.fnew)
+
+'get the last serial number for the selected customer	
+F.Intrinsic.string.Build("Select LAST_SERIAL from GCG_3737_GEC_LAST where CUST_ID = '{0}'",V.Screen.fOEM!txtCustomer.Text,V.Local.ssql)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.ssql)
+'set the last serial number
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,False)
+	V.Local.flast.Set(V.ODBC.conx!rst.FieldValTrim!LAST_SERIAL)
+
+	F.Intrinsic.Math.Add(V.Local.flast,1,V.Local.fcheck)
+	F.Intrinsic.Control.If(V.Local.fcheck,=,V.Local.fnew)
+		'inform the user that the new serial number will be used for that customer
+		F.Intrinsic.String.Build("The new starting serial number for customer: {0} is now set to {1}",V.Screen.fOEM!txtCustomer.Text,V.Screen.fOEM!txtSerialNum.Text,V.Local.smessage)
+		F.Intrinsic.UI.Msgbox(V.Local.smessage)
+		'clear the textboxex
+		Gui.FOEM.txtCustomer.Text("")
+		Gui.fOEM.txtSerialNum.Text("")
+		F.ODBC.conx!rst.Close
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	'if the new number is less than the last serial number entered, inform the user and force them to enter in a higher number
+	F.Intrinsic.Control.If(V.Local.fnew,<=,V.Local.flast)
+		F.Intrinsic.String.Build("The new serial number must be greater than the last serial number for that customer: {0}",V.Local.flast,V.Local.smessage)
+		F.Intrinsic.UI.Msgbox(V.Local.smessage)
+		F.ODBC.conx!rst.Close
+		F.Intrinsic.Control.ExitSub
+
+		'otherwise add the new number to be checked against in the GCG_3737_GEC_OEM and GCG_3737_GEC_SERIAL tables
+	F.Intrinsic.Control.Else
+		'see if the customer is 99999 if so update serial otherwise update oem
+		F.intrinsic.control.if(V.screen.foem!txtcustomer.text,=,"99999")
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_SERIAL where CUST_ID = '{0}'","99999",V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+'				f.Intrinsic.Control.If(v.Local.fnew,=,v.Local.flast
+				F.Intrinsic.Math.Sub(V.Local.fnew,1,V.Local.fnew)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.fnew)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Math.Sub(V.Local.fnew,1,V.Local.fnew)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.fnew)
+				F.ODBC.conx!rstwrite.Set!CUST_ID("99999")
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.EndIf
+			F.odbc.conx!rstWrite.Close
+		F.intrinsic.control.else
+			'if customer is not 99999 update teh OEM table
+			F.Intrinsic.String.Build("Select * from GCG_3737_GEC_OEM where CUST_ID = '{0}'",V.Screen.fOEM!txtCustomer.Text,V.Local.ssql2)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRW("rstWrite",V.Local.ssql2)
+			F.Intrinsic.Control.If(V.ODBC.conX!rstwrite.EOF,=,False)
+				F.Intrinsic.Math.Sub(V.Local.fnew,1,V.Local.fnew)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.fnew)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Screen.fOEM!txtCustomer.Text)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Math.Sub(V.Local.fnew,1,V.Local.fnew)
+				F.ODBC.conx!rstwrite.AddNew
+				F.ODBC.conx!rstwrite.Set!SERIAL(V.local.fnew)
+				F.ODBC.conx!rstwrite.Set!CUST_ID(V.Screen.fOEM!txtCustomer.Text)
+				F.ODBC.conx!rstwrite.Update
+			F.Intrinsic.Control.EndIf
+			F.odbc.conx!rstWrite.Close
+		F.intrinsic.control.endif
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!rst.Close
+
+'inform the user that the new serial number will be used for that customer
+F.Intrinsic.String.Build("The new starting serial number for customer: {0} is now set to {1}",V.Screen.fOEM!txtCustomer.Text,V.Screen.fOEM!txtSerialNum.Text,V.Local.smessage)
+F.Intrinsic.UI.Msgbox(V.Local.smessage)
+
+'clear the textboxex
+Gui.FOEM.txtCustomer.Text("")
+Gui.fOEM.txtSerialNum.Text("")
+
+'lock the save button
+'Gui.fOEM.cmdSave.Enabled(false)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+program.sub.txtcustomer_lostfocus.start
+F.Intrinsic.Control.SetErrorHandler("txtcustomer_lostfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'check to see if there is a customer selected and serial number entered to unlock the save  button
+'F.Intrinsic.Control.If(V.Screen.fOEM!txtCustomer.Text,<>,"")
+'F.Intrinsic.Control.AndIf(V.Screen.fOEM!txtSerialNum.Text,<>,"")
+'	Gui.fOEM.cmdSave.Enabled(true)
+'F.Intrinsic.Control.Else
+'	Gui.fOEM.cmdSave.Enabled(false)
+'F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtcustomer_lostfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.txtcustomer_lostfocus.end
+
+program.sub.txtserialnum_lostfocus.start
+F.Intrinsic.Control.SetErrorHandler("txtserialnum_lostfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'check to see if there is a customer selected and serial number entered to unlock the save  button
+'F.Intrinsic.Control.If(V.Screen.fOEM!txtCustomer.Text,<>,"")
+'F.Intrinsic.Control.AndIf(V.Screen.fOEM!txtSerialNum.Text,<>,"")
+'	Gui.fOEM.cmdSave.Enabled(true)
+'F.Intrinsic.Control.Else
+'	Gui.fOEM.cmdSave.Enabled(false)
+'F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtserialnum_lostfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.txtserialnum_lostfocus.end
+
+program.sub.foem_unload.start
+F.Intrinsic.Control.SetErrorHandler("foem_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'close the form
+Gui.FOEM..Visible(false)
+
+'clear the textboxex
+Gui.FOEM.txtCustomer.Text("")
+Gui.fOEM.txtSerialNum.Text("")
+
+'make the first form visible again
+Gui.Form1..Visible(true)
+
+''lock the save button
+'Gui.fOEM.cmdSave.Enabled(false)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("foem_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.foem_unload.end
+
+program.sub.txtwo_lostfocus.start
+F.Intrinsic.Control.SetErrorHandler("txtwo_lostfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sret.Declare(String)
+
+'see if the textbox is blank
+F.Intrinsic.Control.If(V.global.bexecute,=,True)
+
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.If(V.Screen.FWorkOrder!txtWO.Text,=,"")
+		V.Global.iBrowse.Set(1)
+		F.Intrinsic.Control.ExitSub
+	F.intrinsic.Control.Else
+
+		V.Local.sret.Set(V.Screen.FWorkOrder!txtWO.Text)
+		V.Global.sOrderNo.Set(V.Screen.FWorkOrder!txtWO.Text)
+		'split the return
+		F.Intrinsic.String.split(V.Local.sret,"-",V.Local.sret)
+		V.Global.sJob.Set(V.Local.sret(0).Trim)
+		V.Global.sSuff.Set(V.Local.sret(1).Trim)
+		V.Global.bexecute.Set(True)
+		F.Intrinsic.Control.CallSub(Cmdwobrowser_click)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtwo_lostfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Foem_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.txtwo_lostfocus.end
+
+program.sub.txtpo_lostfocus.start
+F.Intrinsic.Control.SetErrorHandler("txtpo_lostfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sret.Declare(String)
+
+'see if the textbox is blank
+F.Intrinsic.Control.If(V.screen.FPO!txtPO.Text,=,"")
+
+F.Intrinsic.Control.Else
+	V.Global.sPO.Set(V.Screen.FPO!txtPO.Text)
+	V.Global.bexecute.Set(True)
+	F.Intrinsic.Control.CallSub(Cmdpobrowse_click)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtpo_lostfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3737_Serial_Numb_Gen.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Foem_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.txtpo_lostfocus.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_3737_Serial_Numb_Gen$}$WAW$}$5/9/2016
+Program.Sub.Comments.End
+
